@@ -1,7 +1,7 @@
 FROM alpine
 
 COPY install.sh /
-COPY nsenter /
+COPY nsenter /nsenter
 
 RUN apk update && apk upgrade && \
     apk add --no-cache bash && \
